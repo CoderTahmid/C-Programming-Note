@@ -1,4 +1,10 @@
 #include <stdio.h>
+
+/*
+What is C Programming?
+C is a low-level, procedural programming language.
+*/
+
 /*
 About this "include" keyword
 The #include keyword in C is a preprocessor directive
