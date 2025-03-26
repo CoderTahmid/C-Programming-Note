@@ -1,0 +1,8 @@
+About some format specifiers
+
+%d --> Interger variable
+%c --> character
+%s --> string
+%f --> float variable
+%lf --> double variables
+
