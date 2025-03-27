@@ -50,3 +50,15 @@ int sumOfFirstNNumbers()
 
     return 0;
 }
+
+// Problem 4--> Find the Square of a Number
+int squareOfANumber () {
+    int num;
+
+    printf("Enter a number : ");
+    scanf("%d", &num);
+
+    printf("Square of the number is %d", num * num);
+
+    return 0;
+}
