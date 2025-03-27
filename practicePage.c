@@ -1,15 +1,13 @@
 #include <stdio.h>
 
 int main() {
+    int n1, n2, n3;
 
-    int celsiusTemp;
+    printf("Enter 3 numbers : ");
+    scanf("%d %d %d", &n1, &n2, &n3);
 
-    printf("Enter the Celsius value : ");
-    scanf("%d", &celsiusTemp);
-
-    int fahrenheitTemp = (9 * celsiusTemp) / 5 + 32;
-
-    printf("The temparature in Fahrenheit is %d", fahrenheitTemp);
+    int avg = (n1 + n2 + n3) / 3;
+    printf("The average value of this 3 numbers is %d", avg);
 
     return 0;
 }
