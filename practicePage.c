@@ -2,12 +2,14 @@
 
 int main() {
 
-    int num;
+    int celsiusTemp;
 
-    printf("Enter a number : ");
-    scanf("%d", &num);
+    printf("Enter the Celsius value : ");
+    scanf("%d", &celsiusTemp);
 
-    printf("Square of the number is %d", num * num);
+    int fahrenheitTemp = (9 * celsiusTemp) / 5 + 32;
+
+    printf("The temparature in Fahrenheit is %d", fahrenheitTemp);
 
     return 0;
 }
