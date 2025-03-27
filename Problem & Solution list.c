@@ -17,3 +17,19 @@ int findFactorial()
 
     return 0;
 }
+
+// Problem 2--> Print Numbers from 1 to N 
+int printNumbersFrom1ToN()
+{
+    int num;
+
+    printf("Enter a number : ");
+    scanf("%d", &num);
+
+    for (int i = 1; i <= num; i++)
+    {
+        printf("%d\n", i);
+    }
+
+    return 0;
+}
