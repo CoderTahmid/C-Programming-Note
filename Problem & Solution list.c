@@ -18,7 +18,7 @@ int findFactorial()
     return 0;
 }
 
-// Problem 2--> Print Numbers from 1 to N 
+// Problem 2--> Print Numbers from 1 to N
 int printNumbersFrom1ToN()
 {
     int num;
@@ -30,6 +30,23 @@ int printNumbersFrom1ToN()
     {
         printf("%d\n", i);
     }
+
+    return 0;
+}
+
+// Problem 3--> Find the Sum of First N Natural Numbers
+int sumOfFirstNNumbers()
+{
+    int num, sum = 0;
+
+    printf("Enter a number : ");
+    scanf("%d", &num);
+
+    for (int i = 0; i <= num; i++)
+    {
+        sum += i;
+    }
+    printf("%d", sum);
 
     return 0;
 }
