@@ -1,45 +1,6 @@
-#include<stdio.h>
+#include<stdio.h> 🔴
 
 int main()
 {
-   int a;
-   a = 1000;
-   printf("The value of a is %d\n", a); //output: The value of a is 1000
-   
-   a = -21000;
-   printf("The value of a is %d\n", a); //output: The value of a is -21000
-   
-   a = 100000000;
-   printf("The value of a is %d\n", a); //output: The value of a is 100000000
-   
-   a = -100000000;
-   printf("The value of a is %d\n", a); //output: The value of a is -100000000
-   
-   a = 100020004000503;
-   printf("The value of a is %d\n", a); //output: The value of a is -1194388745
-   
-   a = -4325987632;
-   printf("The value of a is %d\n", a); //output: The value of a is -31020336
-   
-   /*
-   We can see je ei last 2 ta printf e "a" er value
-   thik bhabe print hoynai
-   there's a reason behind it
-   ekhane amra "a" ke int type hishabe set korsi right?
-   int type variable'r jonno ekta limit ache
-   er baire shongkha she rakhte parbe na
-   and that limit is 
-   -2147483648 theke 2147483647 porjonto
-   so the main question is, keno emon?
-   int type data memory te only 4byte space nite pare
-   and 4 byte = 4 × 8 bit = 32bit (as 1 byte = 8 bit)
-   every ba 1 bit e amra 2 ta shongkha rakhte parbo (0 or 1) --> 2¹
-   2 bit e amra 4 ta shongkha rakhte parbo --> 2²
-   3 bit e amra 8 ta shongkha rakhte parbo --> 2³
-   therefore 32 bit e amra 2³² = 4294967296 gulo number rakhte parbo
-   now 4294967296 / 2 = 2147483648
-   er jonnei -2147483648 theke 2147483647 porjonto e newa jabe highest
-   */
-   
-   return 0;
+
 }

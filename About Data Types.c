@@ -73,3 +73,22 @@ int difference_between_float_and_double()
 
     return 0;
 }
+
+int using_char_for_characters()
+{
+    char ch;
+   
+    printf("Enter the first letter of your name");
+    scanf("%c", &ch);
+    
+    printf("%c", ch); 
+        /*
+        output: The first letter of inputed string
+        if the inputed value is 999
+        then the output is 9
+        
+        if the inputed value is Tahmid
+        then output is T
+        */
+    return 0;
+}
