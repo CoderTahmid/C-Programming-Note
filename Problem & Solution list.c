@@ -1,5 +1,5 @@
 // Problem 1--> Find the Factorial of a Number
-int findFactorial()
+int find_factorial()
 {
     int num;
 
@@ -19,7 +19,7 @@ int findFactorial()
 }
 
 // Problem 2--> Print Numbers from 1 to N
-int printNumbersFrom1ToN()
+int print_numbers_from_1_to_n()
 {
     int num;
 
@@ -35,7 +35,7 @@ int printNumbersFrom1ToN()
 }
 
 // Problem 3--> Find the Sum of First N Natural Numbers
-int sumOfFirstNNumbers()
+int sum_of_first_n_numbers()
 {
     int num, sum = 0;
 
@@ -52,7 +52,8 @@ int sumOfFirstNNumbers()
 }
 
 // Problem 4--> Find the Square of a Number
-int squareOfANumber () {
+int square_of_a_number()
+{
     int num;
 
     printf("Enter a number : ");
@@ -64,7 +65,8 @@ int squareOfANumber () {
 }
 
 // Problem 5--> Convert Celsius to Fahrenheit
-int celsiusToFahrenheit () {
+int celsius_to_fahrenheit()
+{
     int celsiusTemp;
 
     printf("Enter the Celsius value : ");
@@ -78,7 +80,8 @@ int celsiusToFahrenheit () {
 }
 
 // Problem 6--> Find the Average of Three Numbers
-int findAverageOf3Numbers () {
+int find_average_of_3_numbers()
+{
     int n1, n2, n3;
 
     printf("Enter 3 numbers : ");
@@ -86,6 +89,23 @@ int findAverageOf3Numbers () {
 
     int avg = (n1 + n2 + n3) / 3;
     printf("The average value of this 3 numbers is %d", avg);
+
+    return 0;
+}
+
+// Problem 7--> Find if a character is in upper case or in lower case
+int find_upper_case_or_lower_case()
+{
+    char ch = 'N';
+
+    if (ch >= 'a' && ch <= 'z')
+    {
+        printf("%c is in lower case", ch);
+    }
+    else if (ch >= 'A' && ch <= 'Z')
+    {
+        printf("%c is in upper case", ch);
+    }
 
     return 0;
 }
