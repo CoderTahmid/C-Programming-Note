@@ -109,3 +109,15 @@ int find_upper_case_or_lower_case()
 
     return 0;
 }
+
+// Problem 8--> Make a multiplication table using only add operation
+int multiplication_table_using_only_add_operation()
+{
+    int n = 5, i, j = 5;
+
+    for (i = 1; i <= 10; i++)
+    {
+        printf("%d * %d = %d\n", n, i, j);
+        j = j + 5;
+    }
+}
