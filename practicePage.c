@@ -1,13 +1,21 @@
-#include<stdio.h>
+#include <stdio.h>
 
-/*Namota likha using only addition */
+// multiplication table using only add operation
 
 int main()
 {
-    int n = 5, i, j = 5;
-    
-    for ( i = 1 ; i <= 10 ; i++ ) {
-        printf("%d * %d = %d\n", n, i, j);
-        j = j + 5;
+    int n, i, m, o = 0;
+
+    for (n = 1; n <= 20; n++)
+    {
+        for (i = 1; i <= 10; i++)
+        {
+            printf("%d * %d = %d\n", n, i, n + o);
+            o = o + n;
+        }
+        o = 0;
+        printf("\n");
     }
+
+    return 0;
 }

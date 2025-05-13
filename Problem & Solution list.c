@@ -121,3 +121,22 @@ int multiplication_table_using_only_add_operation()
         j = j + 5;
     }
 }
+
+// Problem 9--> Make multiplication table from 1 to 20 using only add operation
+int multiplication_table_1_to_20_using_only_add_operation()
+{
+    int n, i, m, o = 0;
+
+    for (n = 1; n <= 20; n++)
+    {
+        for (i = 1; i <= 10; i++)
+        {
+            printf("%d * %d = %d\n", n, i, n + o);
+            o = o + n;
+        }
+        o = 0;
+        printf("\n");
+    }
+
+    return 0;
+}
