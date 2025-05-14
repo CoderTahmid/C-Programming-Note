@@ -140,3 +140,25 @@ int multiplication_table_1_to_20_using_only_add_operation()
 
     return 0;
 }
+
+// Problem 10--> Find out all the permutations of 1,2,3
+int all_the_permutations_of_1_2_3()
+{
+    int a, b, c;
+
+    for (a = 1; a <= 3; a++)
+    {
+        for (b = 1; b <= 3; b++)
+        {
+            for (c = 1; c <= 3; c++)
+            {
+                if (a != b && b != c && c != a)
+                {
+                    printf("%d, %d, %d\n", a, b, c);
+                }
+            }
+        }
+    }
+
+    return 0;
+}

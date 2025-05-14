@@ -1,20 +1,24 @@
 #include <stdio.h>
 
-// multiplication table using only add operation
+// find out all the permutations of 1,2, 3
 
 int main()
 {
-    int n, i, m, o = 0;
 
-    for (n = 1; n <= 20; n++)
+    int a, b, c;
+
+    for (a = 1; a <= 3; a++)
     {
-        for (i = 1; i <= 10; i++)
+        for (b = 1; b <= 3; b++)
         {
-            printf("%d * %d = %d\n", n, i, n + o);
-            o = o + n;
+            for (c = 1; c <= 3; c++)
+            {
+                if (a != b && b != c && c != a)
+                {
+                    printf("%d, %d, %d\n", a, b, c);
+                }
+            }
         }
-        o = 0;
-        printf("\n");
     }
 
     return 0;
