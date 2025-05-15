@@ -1,25 +1,22 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-// find out all the permutations of 1,2, 3
+// if x + y = something and x - y = something, then x = ? and y = ?
 
-int main()
-{
+int main() {
 
-    int a, b, c;
-
-    for (a = 1; a <= 3; a++)
-    {
-        for (b = 1; b <= 3; b++)
-        {
-            for (c = 1; c <= 3; c++)
-            {
-                if (a != b && b != c && c != a)
-                {
-                    printf("%d, %d, %d\n", a, b, c);
-                }
-            }
-        }
-    }
+    int x, y, x_plus_y, x_minus_y;
+    
+    printf("X + Y = ");
+    scanf("%d", &x_plus_y);
+    
+    printf("X - Y = ");
+    scanf("%d", &x_minus_y);
+    
+    x = (x_plus_y + x_minus_y) / 2;
+    y = (x_plus_y - x_minus_y) / 2;
+    
+    printf("The value of x is %d \n and y is %d",x ,y);
+    
 
     return 0;
 }
