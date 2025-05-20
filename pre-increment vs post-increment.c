@@ -35,5 +35,4 @@ int main()
         kintu abar next printf e kintu  thik e 6 print hoise
         karon tokhon c er man already bere gese
         */
-
 }

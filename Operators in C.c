@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-// operator in C
-
 int main()
 {
     // bitwise operator
