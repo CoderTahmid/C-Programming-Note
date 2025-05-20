@@ -163,7 +163,7 @@ int all_the_permutations_of_1_2_3()
     return 0;
 }
 
-// Problem 10--> if x+y = something and x-y = something, then x=? and y=?
+// Problem 11--> if x+y = something and x-y = something, then x=? and y=?
 int value_of_X_and_Y_from_2_liniar_equation()
 {
     int x, y, x_plus_y, x_minus_y;
@@ -182,7 +182,7 @@ int value_of_X_and_Y_from_2_liniar_equation()
     return 0;
 }
 
-// Problem 10--> HCF of 2 numbers
+// Problem 12--> HCF of 2 numbers
 int HCF_of_2_numbers()
 {
     int a, b, i, k = 0;
@@ -223,4 +223,27 @@ int HCF_of_2_numbers()
     }
 
     return 0;
+}
+
+// Problem 13--> reverse an array
+int reversing_an_array()
+{
+    int i, j;
+    int arra1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int arra2[10];
+
+    for (i = 9, j = 0; i >= 0, j < 10; i--, j++)
+    {
+        arra2[j] = arra1[i];
+    }
+
+    for (i = 0; i < 10; i++)
+    {
+        arra1[i] = arra2[i];
+    }
+
+    for (i = 0; i < 10; i++)
+    {
+        printf("%d\n", arra1[i]);
+    }
 }
