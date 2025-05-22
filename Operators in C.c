@@ -5,7 +5,7 @@ int main()
     // bitwise operator
     int x = 7, y = 14;
     int z = x & y;
-    printf("%d", z); // output: 6
+    printf("%d\n", z); // output: 6
     /*
     so what's going on here, let's focus 
     (7)₁₀ = (0111)₂
@@ -22,5 +22,13 @@ int main()
     1 and 0 = 0
     so the final result is 0110 which is 6 in decimal number system
     er jonne basically output 6 
+    */
+
+    // ex-or operator
+    int c = x ^ y;
+    printf("%d", c);
+    /*
+    This ex-or operator same as and operator
+    and e jebhabe kaj hoy ei ^ eo same bhabe kaj hbe
     */
 }
