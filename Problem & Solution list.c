@@ -247,3 +247,23 @@ int reversing_an_array()
         printf("%d\n", arra1[i]);
     }
 }
+
+// Problem 14--> reversing an array using only one array
+int reversing_an_array_using_only_one_array()
+{
+    int arra[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+
+    int temp, i, j;
+
+    for (i = 0, j = 9; i < 5; i++, j--)
+    {
+        temp = arra[i];
+        arra[i] = arra[j];
+        arra[j] = temp;
+    }
+
+    for (i = 0; i < 10; i++)
+    {
+        printf("%d\n", arra[i]);
+    }
+}
