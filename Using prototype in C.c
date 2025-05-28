@@ -10,7 +10,6 @@ float add( float a, float b);
     error message e bolbe
     add is not defined
     */
-
 int main()
 {
     float a, b, c;
