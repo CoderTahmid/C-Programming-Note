@@ -35,7 +35,7 @@ int main()
 
     // Bitwise NOT Operator
     int c = ~x;
-    printf("c = %d", c); // output: c = -8
+    printf("c = %d\n", c); // output: c = -8
         /*
         So what it does?
         the value of x is 7 right?
@@ -44,5 +44,19 @@ int main()
         orthat the new value will be (1000)
         and 
         (1000)₂ = (-8)₁₀
+        */
+
+    // Right Shift Operator
+    int d = x >> 1;
+    printf("d = %d\n", d); // output: d = 3
+        /*
+        so ekhane ki hocche?
+        the value of x is 7
+        (7)₁₀ = (0111)₂
+        jehetu ekhane right shift only one dewa hosie
+        tai
+        0111'r right theke only ekta digit cut off hbe
+        so baki thake 0011
+        and (0011)₂ = (3)₁₀
         */
 }
