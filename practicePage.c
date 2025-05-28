@@ -59,4 +59,22 @@ int main()
         so baki thake 0011
         and (0011)₂ = (3)₁₀
         */
+    int e = x >> 2; // we can also do this in this way, tahole ekhane 2 ta digit cut off hbe arki
+    printf("e = %d\n", e); // output: e = 1
+        /*
+        ekhane exactly ager motoi kaj hoise
+        just 2 ghor dan theke shift hoise arki 
+        */
+
+    // Left Shift Operator
+    int f = x << 1;
+    printf("f = %d\n", f); // output: f = 14
+        /*
+        So what's going on here?
+        (7)₁₀ = (00000111)₂
+        ebar ei digit ta ke 1 ghor left e shift kora hbeh
+        orthat bishoy ta emon hbe
+        00000111 theke 00001110
+        and (00001110)₂ = (14)₁₀
+        */
 }
