@@ -77,4 +77,13 @@ int main()
         00000111 theke 00001110
         and (00001110)₂ = (14)₁₀
         */
+
+    // Bitwise OR Operator
+    int g = x | y;
+    printf("g = %d", g); // output: g = 15
+        /*
+        It's no different then the AND operation
+        AND e jemon hoito 
+        thik temon e ekhane hbe arki
+        */
 }
