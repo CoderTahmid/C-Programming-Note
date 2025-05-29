@@ -17,6 +17,9 @@ int main()
         case 4:
             printf("Pass\n");
             break;
+        case 5:
+            printf("fail\n");
+            break;
         default:
             printf("Not even close\n");
             break;
@@ -35,6 +38,18 @@ int main()
         only ek matro case 4 dr jonne pass print koro and break the loop
         ar jodi, egula ekta case o na hoy
         tahole default bhabe "Not even close" print koro
+
+        what if amra ekhane "break" use na kortam after every printf line?
+        ki hoto tokhon
+        tokhon jeta hoto  ta holo je
+        case 4 e eshe jokhon oi code ta execute hoito
+        tar thik por por e abar tar niche case'r code ta execute hoye jaito
+        mane automatically case 5'r code ta execute hoye jaito and print korto fail
+        ebhabe break na use korle
+        jei case ta ekbar mile jabe tar nicher gula automatically execute hbe,
+        niche jotgula case e thakuk na keno including that default case as well
+        and eije bishoy ta ghote 
+        eke bola hoy "fall through"
         */
     }
 
