@@ -47,7 +47,9 @@ int main()
         mane automatically case 5'r code ta execute hoye jaito and print korto fail
         ebhabe break na use korle
         jei case ta ekbar mile jabe tar nicher gula automatically execute hbe,
-        niche jotgula case e thakuk na keno
+        niche jotgula case e thakuk na keno including that default case as well
+        and eije bishoy ta ghote 
+        eke bola hoy "fall through"
         */
     }
 
