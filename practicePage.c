@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-// Convert uppercase to lowercase
+// Convert lowercase to uppercase  
 
 int main() {
 
-    char country[] = {'b', 'A', 'N', 'G', 'L', 'A', 'D', 'E', 'S', 'H', '\0'};
+    char country[] = {'B', 'a', 'n', 'g', 'l', 'a', 'd', 'e', 's', 'h', '\0'};
     printf("%s\n", country);
     
     int i, length = 10;
     
     for ( i = 0 ; i < length ; i++ ) {
-        if (country[i] >= 65 && country[i] <= 90) {
-            country[i] = 'a' + (country[i] - 'A');
+        if (country[i] >= 97 && country[i] <= 122) {
+            country[i] = 'A' + (country[i] - 'a');
         }
     }
     printf("%s", country);
