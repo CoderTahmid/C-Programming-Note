@@ -1,29 +1,18 @@
 #include <stdio.h>
 
-int main()
-{
-    int a = 4;
+// Convert uppercase to lowercase
+
+int main() {
+
+    char country[] = {'b', 'A', 'N', 'G', 'L', 'A', 'D', 'E', 'S', 'H', '\0'};
+    printf("%s\n", country);
     
-    if (a = 4) {
-        goto skip;
+    int i, length = 10;
+    
+    for ( i = 0 ; i < length ; i++ ) {
+        if (country[i] >= 65 && country[i] <= 90) {
+            country[i] = 'a' + (country[i] - 'A');
+        }
     }
-
-    printf("King");
-    if (a = 4) {
-        printf("Messi");
-    }
-
-    skip:
-        printf("This line will be print");
-
-    /*
-    output: This line will be print
-    so ekhane ja hocche ta holo je
-    jokhon a = 4
-    prothom if block'r condition shotto houay program ta if block e jabe
-    and oi goto skip ke hit korbe
-    and er por aro joto code e thakuk na keno
-    shegula ar kaj korbe na, skip hoy jabe
-    and oi "skip" er bhitor theke then baki kaj shuru hbeh
-    */
+    printf("%s", country);
 }
