@@ -11,7 +11,7 @@ int main()
         so what's going on here, let's focus 
         (7)₁₀ = (0111)₂
         (14)₁₀ = (1110)₂
-        eihanebasically binary digit gulo niye kaj hbeh
+        eikhane basically binary digit gulo niye kaj hbeh
         0111 er last'r digit 1110 er last digit er sathe AND operation hbe
         1st er sathe 1st ta
         2nd tar sathe 2nd tar AND operation hbe
