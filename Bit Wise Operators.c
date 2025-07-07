@@ -16,7 +16,6 @@ int main()
         1st er sathe 1st ta
         2nd tar sathe 2nd tar AND operation hbe
         so if we do this we will get 
-        for first digit --> 
         0 AND 1 = 0
         1 AND 1 = 1
         1 AND 1 = 1

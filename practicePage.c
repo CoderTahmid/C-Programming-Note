@@ -1,8 +1,31 @@
 #include <stdio.h>
 
+int string_length(char str[])
+{
+    int i, length = 0;
+
+    for (i = 0; str[i] != '\0'; i++)
+    {
+        length++;
+    }
+
+    return length;
+}
+
 int main()
 {
-    int a = 5, b = -7, c = 0, d;
-    d = ++a && ++b || ++c;
-    printf("\n %d %d %d %d", a, b, c, d);
+
+    char country[100];
+
+    int length;
+
+    printf("Enter your string: ");
+    while (1 == scanf("%s", &country))
+    {
+        length = string_length(country);
+        printf("The length of your string is %d\n", length);
+        printf("Enter your string: ");
+    }
+
+    return 0;
 }
