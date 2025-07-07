@@ -1,31 +1,26 @@
 #include <stdio.h>
 
-int string_length(char str[])
-{
-    int i, length = 0;
+// print a left-shifted triangle 
+/*
+*
+**
+***
+****
+*****
+*/
 
-    for (i = 0; str[i] != '\0'; i++)
-    {
-        length++;
+int main() {
+    
+    int i, n, j;
+    
+    printf("n = ");
+    scanf("%d", &n);
+    
+    for ( i = 1 ; i <= n ; i++) {
+        for (j = 1 ; j <= i ; j++) {
+            printf("*");
+        }
+        printf("\n");
     }
-
-    return length;
-}
-
-int main()
-{
-
-    char country[100];
-
-    int length;
-
-    printf("Enter your string: ");
-    while (1 == scanf("%s", &country))
-    {
-        length = string_length(country);
-        printf("The length of your string is %d\n", length);
-        printf("Enter your string: ");
-    }
-
     return 0;
 }

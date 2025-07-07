@@ -334,3 +334,27 @@ int main()
 
     return 0;
 }
+
+// Problem 18--> Right shifted triangle
+/*
+*
+**
+***
+****
+*****
+*/
+int right_shifted_triangle() {
+    
+    int i, n, j;
+    
+    printf("n = ");
+    scanf("%d", &n);
+    
+    for ( i = 1 ; i <= n ; i++) {
+        for (j = 1 ; j <= i ; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
