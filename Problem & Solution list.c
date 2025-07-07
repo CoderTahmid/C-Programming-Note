@@ -386,3 +386,31 @@ int right_shifted_triangle() {
     }
     return 0;
 }
+
+// Problem 20--> Reverse right shifted triangle
+/*
+****
+ ***
+  **
+   * 
+*/
+int reverse_right_shifted_triangle() {
+    
+    int i, n, j, k;
+    
+    printf("n = ");
+    scanf("%d", &n);
+    
+    for ( i = n ; i > 0 ; i--) {
+        for (k = 1 ; k <= n - i ; k++) {
+            printf(" ");
+        }
+        
+        for ( j = 1 ; j <= i ; j++) {
+            printf("*");
+        }
+        
+        printf("\n");
+    }
+    return 0;
+}

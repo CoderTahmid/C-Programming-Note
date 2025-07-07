@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-// print a  right-shifted triangle 
+// print a reverse right-shifted triangle 
 /*
-   *
-  **
- ***
 ****
+ ***
+  **
+   * 
 */
 
 int main() {
@@ -15,7 +15,7 @@ int main() {
     printf("n = ");
     scanf("%d", &n);
     
-    for ( i = 1 ; i <= n ; i++) {
+    for ( i = n ; i > 0 ; i--) {
         for (k = 1 ; k <= n - i ; k++) {
             printf(" ");
         }
