@@ -1,30 +1,30 @@
-#include <stdio.h>
+# include <stdio.h>
 
-/*
-print a triangle like example given below 
+// Beecrowd 1165 - Prime Number
 
-   *
-  ***
- *****
-*******
-*/
+int main () {
 
-int main() {
+    int n, i, k, j, count = 0;
     
-    int i, n, j, k, l;
-    
-    printf("n = ");
     scanf("%d", &n);
     
-    for ( i = 1, j = 0 ; i <= n ; i++, j++) {
-        for ( k = 1 ; k <= n - i ; k++) {
-            printf(" ");
+    for ( i = 0 ; i < n ; i++){
+        scanf("%d", &k);
+        
+        for ( j = 1 ; j <= k ; j++) {
+            if (k % j == 0) {
+                count++;
+            }
         }
         
-        for (l = 1 ; l <= i + j ; l++) {
-            printf("*");
+        if (count == 2) {
+            printf("%d eh primo\n", k);
+            count = 0;
+        } else {
+            printf("%d nao eh primo\n", k);
+            count = 0;
         }
-        printf("\n");
+        
     }
     
     return 0;
