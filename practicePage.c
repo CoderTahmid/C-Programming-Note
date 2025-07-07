@@ -1,25 +1,29 @@
 #include <stdio.h>
 
-// print a left-shifted triangle 
+// print a  right-shifted triangle 
 /*
-*
-**
-***
+   *
+  **
+ ***
 ****
-*****
 */
 
 int main() {
     
-    int i, n, j;
+    int i, n, j, k;
     
     printf("n = ");
     scanf("%d", &n);
     
     for ( i = 1 ; i <= n ; i++) {
-        for (j = 1 ; j <= i ; j++) {
+        for (k = 1 ; k <= n - i ; k++) {
+            printf(" ");
+        }
+        
+        for ( j = 1 ; j <= i ; j++) {
             printf("*");
         }
+        
         printf("\n");
     }
     return 0;
