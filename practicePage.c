@@ -111,9 +111,9 @@ int main()
     sizeof(long int) = 4 byte
     sizeof(long long int) = 8 byte
     */
-    
+
     /*Pointer substruction*/
-    printf("age(%u) - age2(%u) = %u\n",ptrAge, ptrAge2, ptrAge - ptrAge2); // output: age(3711957448) - age2(3711957440) = 2
+    printf("age(%u) - age2(%u) = %u\n", ptrAge, ptrAge2, ptrAge - ptrAge2); // output: age(3711957448) - age2(3711957440) = 2
     /*
     ekhane ki hocche?
     first e jei variable ta ache tar address hocche 3711957448
@@ -124,6 +124,21 @@ int main()
     er jonnei ekhane 8 difference dekhacche
     */
 
+    /*Pointer comparison*/
+    int roll1 = 10;
+    int roll2 = 20;
+
+    int *ptrRoll1 = &roll1;
+    int *ptrRoll2 = &roll2;
+    printf("ptrRoll1 and ptrRoll2 is similar? --> %u\n", ptrRoll1 == ptrRoll2); // output: ptrRoll1 and ptrRoll2 is similar? --> 0
+    /*
+    ekhane output 0 ashtase karon
+    ptrRoll1 and ptrRoll2 is not same.
+    ptrRoll1 and ptrRoll2 2 ta variable'r address carry kore right?
+    and ovbously that's not gonna be same
+    karon ekoi address e 2 ta different value store kora jabe nah
+    er jonnei muloto ptrRoll1 == ptrRoll2 0 return korse
+    */
 
     return 0;
 }
