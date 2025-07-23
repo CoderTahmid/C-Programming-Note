@@ -79,7 +79,9 @@ int main()
     // Pointer arithmetic
 
     int age = 22;
+    int age2 = 44;
     int *ptrAge = &age;
+    int *ptrAge2 = &age2;
     printf("ptrAge before increament: %u\n", ptrAge); // output: ptrAge before increament: 337639932 , %u is for unsigned integer
     ptrAge++;
     printf("ptrAge after increament: %u\n", ptrAge); // output: ptrAge after increament: 337639936
@@ -108,7 +110,18 @@ int main()
     sizeof(double) = 8 byte
     sizeof(long int) = 4 byte
     sizeof(long long int) = 8 byte
+    */
 
+    /*Pointer substruction*/
+    printf("age(%u) - age2(%u) = %u\n", ptrAge, ptrAge2, ptrAge - ptrAge2); // output: age(3711957448) - age2(3711957440) = 2
+    /*
+    ekhane ki hocche?
+    first e jei variable ta ache tar address hocche 3711957448
+    and 2nd jei variable ta ache tar address hocche 3711957440
+    and if you look into it
+    ekhane total difference hocche 8 right?
+    basically ekhane 2 ta integer different ache (and er jonnei output 2)
+    er jonnei ekhane 8 difference dekhacche
     */
 
     return 0;
