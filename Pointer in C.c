@@ -76,5 +76,13 @@ int main()
     we are exactly printing the address of king variable
     */
 
+    // Pointer arithmetic
+
+    int age = 22;
+    int *ptrAge = &age;
+    printf("ptrAge before increament: %u\n", ptrAge); // output: ptrAge before increament: 337639932 , %u is for unsigned integer
+    ptrAge++;
+    printf("ptrAge after increament: %u\n", ptrAge); // output: ptrAge after increament: 337639936
+
     return 0;
 }
