@@ -17,7 +17,6 @@ struct student {
 int main()
 {
     struct student s1;
-
     s1.roll = 19;
     s1.cgpa = 9.2;
     strcpy(s1.name, "tahmid"); 
@@ -33,6 +32,23 @@ int main()
         /*
         and this is how we are gonna print these data
         */
+       
+    // using a same structure for another variables
+    struct student s2;
+    s2.roll = 20;
+    s2.cgpa = 9.4;
+    strcpy(s2.name, "Maruf");
+    printf("Name: %s\n", s2.name);
+    printf("Roll: %d\n", s2.roll);
+    printf("CGPA: %.2f\n", s2.cgpa);
+    printf("\n");
 
+    struct student s3;
+    s3.roll = 90;
+    s3.cgpa = 9.8;
+    strcpy(s3.name, "Latina");
+    printf("Name: %s\n", s3.name);
+    printf("Roll: %d\n", s3.roll);
+    printf("CGPA: %.2f\n", s3.cgpa);
     return 0;
 }
