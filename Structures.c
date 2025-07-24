@@ -64,5 +64,9 @@ int main()
     printf("ECE 1st CGPA: %.2f\n", ECE[0].cgpa);
     printf("\n");
 
+    // Initializing structures
+    struct student s4 = {122, 9.3, "Mim"};
+    printf("Name: %s\t Roll: %d\t CGPA: %.2f\n", s4.name, s4.roll, s4.cgpa);
+
     return 0;
 }
