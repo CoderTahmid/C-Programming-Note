@@ -32,7 +32,7 @@ int main()
         /*
         and this is how we are gonna print these data
         */
-       
+
     // using a same structure for another variables
     struct student s2;
     s2.roll = 20;
@@ -50,5 +50,19 @@ int main()
     printf("Name: %s\n", s3.name);
     printf("Roll: %d\n", s3.roll);
     printf("CGPA: %.2f\n", s3.cgpa);
+    printf("\n");
+
+    // Array of structures
+    struct student ECE[100]; // mane hocche ami ekhn ei ECE'r moddhe 100 ta data rakhte parbo
+
+    ECE[0].roll = 1665;
+    ECE[0].cgpa = 9.3;
+    strcpy(ECE[0].name, "Karimul");
+
+    printf("ECE 1st Name: %s\n", ECE[0].name);
+    printf("ECE 1st Roll: %d\n", ECE[0].roll);
+    printf("ECE 1st CGPA: %.2f\n", ECE[0].cgpa);
+    printf("\n");
+
     return 0;
 }
