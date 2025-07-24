@@ -68,5 +68,15 @@ int main()
     struct student s4 = {122, 9.3, "Mim"};
     printf("Name: %s\t Roll: %d\t CGPA: %.2f\n", s4.name, s4.roll, s4.cgpa);
 
+    // Pointers to structure
+    struct student s5 = {1212, 8.9, "Mahadi"};
+    printf("Roll at 1st time: %d\n", s5.roll);
+    struct student *ptrS5 = &s5; // ekhane s5 er memory address ptrS5 variable e store kora hocche
+    printf("Roll at 2nd time: %d\n", (*ptrS5).roll);
+        /*
+        ekhane ptrS5 e store ache whole s5 ta
+        ar *ptrS5 eqaul to mean kore je value at address ptrS5
+        */
+
     return 0;
 }
