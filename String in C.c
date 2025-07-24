@@ -18,5 +18,16 @@ int main()
     mane jei size dewa hbe tar theke 1 kom print korbe arki
     */
 
+    // Usage of strcpy()
+    char oldStr[] = "oldStr";
+    char newStr[] = "newStr";
+    strcpy(newStr, oldStr);
+    puts(newStr); // output: oldStr
+    /*
+    ei strcpy()
+    basically string copy korte use hoy
+    newStr er value change kore dise oldStr er sathe
+    */
+
     return 0;
 }
