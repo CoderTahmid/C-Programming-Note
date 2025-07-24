@@ -29,5 +29,18 @@ int main()
     newStr er value change kore dise oldStr er sathe
     */
 
+    // Usage of strcat()
+    char firstStr[100] = "Hello ";
+    char secStr[] = "World";
+    strcat(firstStr, secStr);
+    puts(firstStr); // output: Hello World
+    /*
+    strcat is basically for concatination
+    ekhane strcat() 2 ta parameters nibe
+    then first string'r sathe 2nd string jora lagabe and
+    ta first string e store korbe
+    NB: firstStr er ototuk storage capacity thakte hbe jate she 2 tai store korte pare
+    */
+
     return 0;
 }
