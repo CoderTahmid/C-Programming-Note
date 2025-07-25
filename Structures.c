@@ -77,6 +77,12 @@ int main()
         ekhane ptrS5 e store ache whole s5 ta
         ar *ptrS5 eqaul to mean kore je value at address ptrS5
         */
+    
+    // Using arrow (->) operator
+    printf("printing s5 using arrow operator\n");
+    printf("Name: %s\n", ptrS5 -> name);
+    printf("Roll: %d\n", ptrS5 -> roll);
+    printf("CGPA: %.2f\n", ptrS5 -> cgpa);
 
     return 0;
 }
