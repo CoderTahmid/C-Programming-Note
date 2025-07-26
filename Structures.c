@@ -15,11 +15,11 @@ struct student {
 }; // this is how we define a structure
 // here the roll, cgpa, name is the members of this student structure
 
-struct employee {
+typedef struct employee {
     char name[100];
     int salary;
     float workRating;
-};
+} emp;
 
 void printInfo(struct employee e1);
 
@@ -104,6 +104,31 @@ int main()
         structure function e pass korle sheita
         call by value hoy
         orthat main data'r ekta copy pass hoy
+        */
+
+    // using typedef keyword 
+    emp e2;
+    strcpy(e2.name, "Nomita");
+    e2.salary = 463722222;
+    e2.workRating = 7.2;
+    printf("About e2\n");
+    printf("Name: %s\n", e2.name);
+    printf("Salary: %d\n", e2.salary);
+    printf("WR: %.2f\n", e2.workRating);
+        /*
+        basically what we are doing?
+        amra ekhane just simply emp likhei arekta new insurance nite partasi employee stucture'r
+        
+        typedef basically ja kore ta holo je
+        she oi structure'r ekta nickname dey
+        amra ekhane employee structure ke name disi emp
+        and simply just emp ke call diyei amra ei structure'r value set korte partasi
+        
+        noticeable bishoy hocche
+        amra ei only emp call koreo structure'r member gulor value define korte parbo
+        abar ager way te 
+        structure employee e2
+        ebhabeo korte parbo
         */
 
     return 0;
