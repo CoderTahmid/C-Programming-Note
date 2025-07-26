@@ -13,8 +13,15 @@ struct student {
     float cgpa;
     char name[100];
 }; // this is how we define a structure
+// here the roll, cgpa, name is the members of this student structure 
 
-void 
+typedef struct employee {
+    char name[100];
+    int salary;
+    float workRating;
+} emp;
+
+void printInfo( struct employee e1 );
 
 int main()
 {
@@ -81,20 +88,59 @@ int main()
         ar *ptrS5 eqaul to mean kore je value at address ptrS5
         */
     
-    
     // Using arrow (->) operator
     printf("printing s5 using arrow operator\n");
     printf("Name: %s\n", ptrS5 -> name);
     printf("Roll: %d\n", ptrS5 -> roll);
     printf("CGPA: %.2f\n", ptrS5 -> cgpa);
+    printf("\n");
     
     // passing structure to a function
-    struct employee {
-        char name[100];
-        int salary;
-        float workRating;
-    };
+    struct employee e1;
+    strcpy(e1.name, "Tahmid");
+    e1.salary = 372;
+    e1.workRating = 6.3;
+    printInfo(e1);
+        /*
+        one thing to know
+        structure function e pass korle sheita
+        call by value hoy
+        orthat main data'r ekta copy pass hoy
+        */
         
+    // using typedef keyword 
+    emp e2;
+    strcpy(e2.name, "Nomita");
+    e2.salary = 463722222;
+    e2.workRating = 7.2;
+    printf("About e2\n");
+    printf("Name: %s\n", e2.name);
+    printf("Salary: %d\n", e2.salary);
+    printf("WR: %.2f\n", e2.workRating);
+        /*
+        basically what we are doing?
+        amra ekhane just simply emp likhei arekta new insurance nite partasi employee stucture'r
+        
+        typedef basically ja kore ta holo je
+        she oi structure'r ekta nickname dey
+        amra ekhane employee structure ke name disi emp
+        and simply just emp ke call diyei amra ei structure'r value set korte partasi
+        
+        noticeable bishoy hocche
+        amra ei only emp call koreo structure'r member gulor value define korte parbo
+        abar ager way te 
+        structure employee e2
+        ebhabeo korte parbo
+        */
     
+        
     return 0;
+}
+
+void printInfo ( struct employee e1 ) {
+    printf("Printing from another function\n");
+    printf("Name: %s\n", e1.name);
+    printf("Salary: %d\n", e1.salary);
+    printf("WR: %.2f\n", e1.workRating);
+    printf("\n");
 }

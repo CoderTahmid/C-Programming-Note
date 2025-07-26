@@ -13,6 +13,15 @@ struct student {
     float cgpa;
     char name[100];
 }; // this is how we define a structure
+// here the roll, cgpa, name is the members of this student structure
+
+struct employee {
+    char name[100];
+    int salary;
+    float workRating;
+};
+
+void printInfo(struct employee e1);
 
 int main()
 {
@@ -84,5 +93,26 @@ int main()
     printf("Roll: %d\n", ptrS5 -> roll);
     printf("CGPA: %.2f\n", ptrS5 -> cgpa);
 
+    // passing structure to a function
+    struct employee e1;
+    strcpy(e1.name, "Tahmid");
+    e1.salary = 372;
+    e1.workRating = 6.3;
+    printInfo(e1);
+        /*
+        one thing to know
+        structure function e pass korle sheita
+        call by value hoy
+        orthat main data'r ekta copy pass hoy
+        */
+
     return 0;
+}
+
+void printInfo ( struct employee e1 ) {
+    printf("Printing from another function\n");
+    printf("Name: %s\n", e1.name);
+    printf("Salary: %d\n", e1.salary);
+    printf("WR: %.2f\n", e1.workRating);
+    printf("\n");
 }
