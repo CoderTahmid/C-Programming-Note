@@ -69,6 +69,34 @@ int main () {
         and the intention of opening the file is reading it, as we pass the 2nd value "r"
         "r" represents reading
         */
+    fclose(fptr);
+        /*
+        here we are closing the file that we opened
+        karon file close na korle 
+        joto bar amra program run korbo totobar file ta open hote chabe
+        and jeta ekta bad thing, ete amader program slow hbe
+        */
+
+    FILE *fptr2;
+    fptr2 = fopen("king.txt", "r");
+    if (fptr2 == NULL) {
+        printf("File doesn't exist\n"); // output: File doesn't exist
+    } else {
+        fclose(fptr2);
+    }
+    /*
+    so what is happening here?
+    first e 
+    fptr2 te amra king.txt file open korar try korsi read korara intention e
+    but ei name e kono file nei 
+    er jonne oi fptr2 er value hoise NULL
+    and er jonnei oi output ashche
+    ar file ta thakle
+    amra just simply close kore ditam eta ke 
+    karon apadoto kono kaj kortasi na er dara
+    */
+
+    
     
     return 0;
 }
