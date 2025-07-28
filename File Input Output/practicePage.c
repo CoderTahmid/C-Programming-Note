@@ -142,6 +142,13 @@ int main () {
     FILE *fptr5;
     fptr5 = fopen("test3.txt", "w");
     fprintf(fptr5, "%d", 12212); // so test3.txt te age chilo king, now the text become 12212
+    fclose(fptr5);
+
+    // append data to any file
+    FILE *fptr6;
+    fptr6 = fopen("test4.txt", "a");
+    fprintf(fptr6, "%s", "TAHMID"); // ekhane test4.txt file e only MANGO chilo, ekhn er sathe jog holo TAHMID, now new text of test4.txt is MANGOTAHMID
+    fclose(fptr6); 
 
     return 0;
 }
