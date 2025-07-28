@@ -96,7 +96,22 @@ int main () {
     karon apadoto kono kaj kortasi na er dara
     */
 
-    
+    // Reading from a file
+    /*
+    simple reading concept
+
+    char ch;
+    fscanf(fptr, "%c", &ch);
+    first parameter tells us kon file theke amder data read korte hbe
+    2nd parameter tells us what type of data we are we will be reading
+    3rd parameter tell us where to store the value that we just read, ekhane amra ch variable e shei read kora jinish ta store kortasi
+    */
+    char ch;
+    FILE *fptr3;
+    fptr3 = fopen("test.txt", "r");
+    fscanf(fptr3, "%c", &ch);
+    printf("character = %c\n", ch); // output: character = A
+    fclose(fptr3);
     
     return 0;
 }
