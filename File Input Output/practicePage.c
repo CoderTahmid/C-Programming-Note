@@ -109,9 +109,25 @@ int main () {
     char ch;
     FILE *fptr3;
     fptr3 = fopen("test.txt", "r");
+    printf("From test.txt file\n");
     fscanf(fptr3, "%c", &ch);
     printf("character = %c\n", ch); // output: character = A
+    fscanf(fptr3, "%c", &ch);
+    printf("character = %c\n", ch); // output: character = p
+    fscanf(fptr3, "%c", &ch);
+    printf("character = %c\n", ch); // output: character = p
+    /*
+    by writing this same thing twice and thrice we can get the 
+    next characters
+    */
     fclose(fptr3);
-    
+
+    int n;
+    FILE *fptr4;
+    fptr4 = fopen("test2.txt", "r");
+    printf("From test2.txt file\n");
+    fscanf(fptr4, "%d", &n);
+    printf("%d\n", n); // output: 1234
+    fclose(fptr4);
     return 0;
 }
