@@ -129,5 +129,19 @@ int main () {
     fscanf(fptr4, "%d", &n);
     printf("%d\n", n); // output: 1234
     fclose(fptr4);
+
+    // writing to a file
+    /*
+    simple syntax of writing to a file
+    fprintf(fptr, "%d", "9999");
+    same as fscanf()
+    first parameter pointer ta jabe, I mean jei file e write korte chai
+    2nd parameter ta format specifier, or you can say jei data ta write korte chai shetar format
+    3rd parameter ta hocche text jeta amra onno file e print korte chai
+    */
+    FILE *fptr5;
+    fptr5 = fopen("test3.txt", "w");
+    fprintf(fptr5, "%d", 12212); // so test3.txt te age chilo king, now the text become 12212
+
     return 0;
 }
