@@ -156,5 +156,10 @@ int main () {
     char firstChar = fgetc(fptr7);
     printf("%c\n", firstChar); // output: N 
 
+    // character by character writing
+    FILE *fptr8;
+    fptr8 = fopen("test6.txt", "w");
+    fputc('F', fptr8); // previous pura text ta muche 'F' hoye geseh only
+
     return 0;
 }
