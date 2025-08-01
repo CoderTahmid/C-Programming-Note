@@ -148,7 +148,13 @@ int main () {
     FILE *fptr6;
     fptr6 = fopen("test4.txt", "a");
     fprintf(fptr6, "%s", "TAHMID"); // ekhane test4.txt file e only MANGO chilo, ekhn er sathe jog holo TAHMID, now new text of test4.txt is MANGOTAHMID
-    fclose(fptr6); 
+    fclose(fptr6);
+
+    // Reading character by character
+    FILE *fptr7;
+    fptr7 = fopen("test5.txt", "r");
+    char firstChar = fgetc(fptr7);
+    printf("%c\n", firstChar); // output: N 
 
     return 0;
 }
