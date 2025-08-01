@@ -120,7 +120,7 @@ int main()
         amra ekhane just simply emp likhei arekta new insurance nite partasi employee stucture'r
         
         typedef basically ja kore ta holo je
-        she oi structure'r ekta nickname dey
+        she oi structure'r ekta nickname dey or you can say alias dite use hoy
         amra ekhane employee structure ke name disi emp
         and simply just emp ke call diyei amra ei structure'r value set korte partasi
         
