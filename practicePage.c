@@ -21,7 +21,14 @@ int main()
         and ei pointer ta ke amra typecasting kore int e convert kore nisi ( (int*) )
 
         now ekhane ei ptr pointer ta point kortase 20 bytes of memory
+        ar amra je ei memory ta allocate korsi, ta amra runtime e allocate kortasi
         */
+    ptr[0] = 1;
+    ptr[1] = 32;
+    ptr[2] = 43;
+    ptr[3] = 99;
+    ptr[4] = 2323; // this how we can set the value of this ptr, just like normal array
+    printf("%d\n", ptr[4]); // output: 2323
     
 
     return 0;
