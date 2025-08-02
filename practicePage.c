@@ -73,5 +73,26 @@ int main()
     free(ptr);
     free(ptr1);
 
+    // realloc() function
+    /*
+    sometimes we may need to change the allocated memory size
+    like
+    10 ta space allocate korlam
+    but pore dekha gelo je aro 5 ta new add kora lgbe
+    tokhon amra ei realloc() use korbo
+    ar jodi abar 5 ta komaite hoy
+    tao ei realloc() use korbo
+    */
+    int *ptr2;
+    ptr2 = (int*) calloc(3, sizeof(int));
+
+    ptr2[0] = 99;
+    ptr2[1] = 98;
+    ptr2[2] = 97;
+
+    printf("%d\n%d\n%d\n", ptr2[0], ptr2[1], ptr2[2]);
+
+    ptr2 = realloc(ptr2, 5); // ekhn ekhane ptr2 er jonne allocated memory space 3 bytes theke 5 bytes hoye gese
+
     return 0;
 }
