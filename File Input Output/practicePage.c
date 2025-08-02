@@ -155,11 +155,34 @@ int main () {
     fptr7 = fopen("test5.txt", "r");
     char firstChar = fgetc(fptr7);
     printf("%c\n", firstChar); // output: N 
+    fclose(fptr7);
 
     // character by character writing
     FILE *fptr8;
     fptr8 = fopen("test6.txt", "w");
     fputc('F', fptr8); // previous pura text ta muche 'F' hoye geseh only
+    fclose(fptr8);
+
+    // About EOF (end of file)
+    /*
+    jokhon EOF ashe tokhon er mane hocche je
+    amra file'r all data read kore felsi ar kisu nai read korar er jonnei EOF return kortase
+    */
+    FILE *fptr9;
+    fptr9 = fopen("test7.txt", "r");
+    char okkhor;
+    okkhor = fgetc(fptr9);
+
+    while (okkhor != EOF) {
+        printf("%c", okkhor);
+        okkhor = fgetc(fptr9);
+        /*
+        Ekhane ei loop t ke bola hocche jotokkhon porjonto EOF na ashe
+        totokkhon loop ta chalao
+        */
+    }
+    printf("\n");
+    fclose(fptr9);
 
     return 0;
 }
