@@ -55,5 +55,23 @@ int main()
     ptr1[2] = 20;
     printf("ptr[0] = %d\tptr[1] = %d\n", ptr1[0], ptr1[1]); // output: ptr[0] = 0      ptr[1] = 10
 
+    // free() function
+    /*
+    kahini hocche je
+    let amra program'r shuru te kono ekta variable use korsi 'a'
+    program ta onek boro
+    just first 2 line ei a variable ta use hoise
+    pore ar use hoy nai
+
+    to amader compiler enough smart houay she oi variable'r memory address ta free kore dey.
+    mane khali kore dey jate onno konobhabe oitake use kora jay
+    but jokhon amra kono memory dynamically allocate kore dibo
+    tokhon compiler sheta ke ar free kore dey na.
+    whole program jurei oi address e data theke jay.
+    so as a programmer we should free the address
+    */
+    free(ptr);
+    free(ptr1);
+
     return 0;
 }
