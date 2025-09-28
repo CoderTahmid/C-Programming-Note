@@ -19,6 +19,7 @@ int main()
         amra malloc diye 20 bytes jayga nite chaacchi
         and malloc amader sheta dise but shei jayga tuk er just pointer dise amader
         and ei pointer ta ke amra typecasting kore int e convert kore nisi ( (int*) )
+        and why typecasting is important? karon malloc'r return type hocche void
 
         now ekhane ei ptr pointer ta point kortase 20 bytes of memory
         ar amra je ei memory ta allocate korsi, ta amra runtime e allocate kortasi
@@ -36,7 +37,7 @@ int main()
     calloc() e ekta bishoy hocche je
     amra jokhon calloc diye kichu memory nibo tokhon ogula by defaul first e 0 thakbe each values
     like
-    9 byte nilam 
+    12 byte nilam 
     3 ta integer
     in initial moment
     n[0] = 0
